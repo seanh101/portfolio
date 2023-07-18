@@ -7,13 +7,13 @@ function ProjectsPage() {
       <h2>Projects</h2>
       <ul>
         <li>
-          <Link to="/projects/project1">Project 1</Link>
+          <Link to="/projects/project1">Couch Potato</Link>
         </li>
         <li>
-          <Link to="/projects/project2">Project 2</Link>
+          <Link to="/projects/project2">Soundify</Link>
         </li>
         <li>
-          <Link to="/projects/project3">Project 3</Link>
+          <Link to="/projects/project3">BlackJack</Link>
         </li>
       </ul>
     </div>
