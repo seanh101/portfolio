@@ -30,3 +30,11 @@
     border-radius: 5px;
   }
   
+  /* About.css */
+.skill-item {
+    /* Apply the lavalamp background to the skill item boxes */
+    background: linear-gradient(-45deg, #ff4e50, #fc913a, #f9d423, #17b978, #00a1ff, #7328a6, #e24383);
+    background-size: 300% 300%;
+    animation: gradientAnimation 15s linear infinite;
+  }
+  
