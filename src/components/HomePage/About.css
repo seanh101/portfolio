@@ -1,74 +1,32 @@
-.lavalamp {
-    height: 100vh;
-    background: linear-gradient(-45deg, #ff4e50, #fc913a, #f9d423, #17b978, #00a1ff, #7328a6, #e24383);
-    background-size: 300% 300%; /* Adjust the size for a more visible lavalamp effect */
-    animation: gradientAnimation 15s linear infinite; /* Adjust the animation duration for smoother movement */
+/* About.css */
+
+/* ... Your existing CSS rules ... */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
   
-  /* CSS animation to create the lavalamp movement */
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
-  
-  /* Additional styling for the content area */
-  .lavalamp .container {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: rgba(255, 255, 255, 0.8);
+  .project-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position: relative; /* To contain the pseudo-elements */
-    z-index: 1; /* To position the content above the lavalamp background */
   }
   
-  /* Pseudo-elements to create the rounded edges of the content area */
-  .lavalamp .container::before,
-  .lavalamp .container::after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    z-index: -1;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.8);
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
   }
   
-  .lavalamp .container::before {
-    left: 0;
+  .skill-item {
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
   }
   
-  .lavalamp .container::after {
-    right: 0;
-  }
-  
-  /* Additional styling for the About, Projects, and Contact Me sections */
-  .lavalamp h2 {
-    margin-bottom: 20px;
-  }
-  
-  .lavalamp ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .lavalamp ul li {
-    margin-bottom: 10px;
-  }
-  
-  .lavalamp ul li strong {
-    font-weight: bold;
-  }
-  
-  .lavalamp a {
-    color: #007bff;
-  }
-  
-  .lavalamp a:hover {
-    color: #0056b3;
-  }
