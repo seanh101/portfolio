@@ -1,3 +1,6 @@
+/* index.css */
+
+/* Add the lavalamp class to the body element to apply the effect to the whole page */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Apply the lavalamp background to the body element */
+  background: linear-gradient(-45deg, #ff4e50, #fc913a, #f9d423, #17b978, #00a1ff, #7328a6, #e24383);
+  background-size: 300% 300%; /* Adjust the size for a more visible lavalamp effect */
+  animation: gradientAnimation 15s linear infinite; /* Adjust the animation duration for smoother movement */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CSS animation to create the lavalamp movement */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
+
+/* Additional styling for the content area (you can keep these styles here) */
+/* ... */
