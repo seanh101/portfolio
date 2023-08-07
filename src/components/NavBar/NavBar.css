@@ -1,0 +1,23 @@
+
+  
+  /* Optional: If you want to add some space to the top of the page to prevent content from being covered by the navbar */
+  body {
+    padding-top: 70px; 
+    /* Adjust the value as needed based on your navbar height */
+  }
+  
+  /* NavBar.css */
+
+/* Add your dark blue background color here */
+.navbar-custom {
+    background-color: #3fa6d9; /* Dark blue background color */
+  }
+  
+  /* Add the navbar-sticky class to control z-index and position */
+  .navbar-sticky {
+    position: sticky;
+    z-index: 100;
+  }
+  
+
+  

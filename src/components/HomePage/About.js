@@ -6,7 +6,7 @@ function About() {
     <div className="container mt-5">
       <div className="row">
         <div className="col-lg-8 offset-lg-2">
-          <h2>About Me</h2>
+        <h2 id="about">About Me</h2>
           <p>
             Hi there! I'm Sean Harrington, a software engineer with a background in tech sales and a passion for building innovative solutions. I bring a unique blend of sales expertise and technical acumen, allowing me to bridge the gap between business objectives and cutting-edge technology.
           </p>
@@ -22,7 +22,7 @@ function About() {
 
       <div className="row mt-5">
         <div className="col-lg-8 offset-lg-2">
-          <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
           <div className="project-grid">
             <div className="project-item">
             <h3>
@@ -124,7 +124,7 @@ function About() {
 
       <div className="row mt-5">
         <div className="col-lg-8 offset-lg-2">
-          <h2>Contact Me</h2>
+        <h2 id="contact">Contact Me</h2>
           <div className="contact-icons">
             <a href="mailto:seanharrington4189@gmail.com" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-envelope"></i>
