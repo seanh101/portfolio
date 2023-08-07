@@ -25,7 +25,7 @@ function About() {
         <h2 id="projects">Projects</h2>
           <div className="project-grid">
             <div className="project-item">
-            <h3>
+            <h3 className="project-title">
                 Couch Potato
                 <a href="https://github.com/seanh101/couch-potato" target="_blank" rel="noopener noreferrer" className="github-icon-link">
                   <i className="fab fa-github"></i>
@@ -47,7 +47,7 @@ function About() {
               </div>
             </div>
             <div className="project-item">
-            <h3>
+            <h3 className="project-title">
                 Soundify
                 <a href="https://github.com/seanh101/Soundify" target="_blank" rel="noopener noreferrer" className="github-icon-link">
                   <i className="fab fa-github"></i>
@@ -73,7 +73,7 @@ function About() {
               </div>
             </div>
             <div className="project-item">
-            <h3>
+            <h3 className="project-title">
                 NBA Lineup Creator
                 <a href="https://github.com/seanh101/NBA-Lineups" target="_blank" rel="noopener noreferrer" className="github-icon-link">
                   <i className="fab fa-github"></i>
@@ -99,7 +99,7 @@ function About() {
               </div>
             </div>
             <div className="project-item">
-              <h3>
+              <h3 className="project-title">
                 Blackjack Game
                 <a href="https://github.com/seanh101/Blackjack-game" target="_blank" rel="noopener noreferrer" className="github-icon-link">
                   <i className="fab fa-github"></i>
