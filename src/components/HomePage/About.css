@@ -40,3 +40,15 @@
 .github-icon-link {
   margin-left: 10px;
 }
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust this value to set the space between icons */
+  font-size: 48px; /* Adjust this value to change the icon size */
+}
+
+.col-lg-8.offset-lg-2 h2 {
+  text-align: center;
+  color: white;
+}

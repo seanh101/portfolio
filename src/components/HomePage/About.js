@@ -98,6 +98,26 @@ function About() {
                 <div className="skill-item">0auth</div>
               </div>
             </div>
+            <div className="project-item">
+              <h3>
+                Blackjack Game
+                <a href="https://github.com/seanh101/Blackjack-game" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="https://seanh101.github.io/Blackjack-game/" target="_blank" rel="noopener noreferrer" className="arrow-icon-link">
+                  <i className="fas fa-arrow-right"></i>
+                </a>
+              </h3>
+              <p>
+                A fun Blackjack game built with JavaScript, HTML, and CSS, where you can test your luck and try to beat the dealer in this classic casino game!
+              </p>
+              <div className="skills-grid">
+                <div className="skill-item">JavaScript</div>
+                <div className="skill-item">HTML</div>
+                <div className="skill-item">CSS</div>
+                <div className="skill-item">CardStarter Library</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -105,17 +125,14 @@ function About() {
       <div className="row mt-5">
         <div className="col-lg-8 offset-lg-2">
           <h2>Contact Me</h2>
-          <form action="mailto:seanharrington4189@gmail.com" method="post" encType="text/plain">
-            <div className="form-group">
-              <label htmlFor="subject">Subject:</label>
-              <input type="text" id="subject" name="subject" className="form-control" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="body">Body:</label>
-              <textarea id="body" name="body" rows="5" className="form-control"></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">Send Email</button>
-          </form>
+          <div className="contact-icons">
+            <a href="mailto:seanharrington4189@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sean-harrington-a543b013a/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
