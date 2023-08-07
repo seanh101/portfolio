@@ -1,5 +1,3 @@
-// About.js
-
 import React from 'react';
 import './About.css';
 
@@ -27,7 +25,15 @@ function About() {
           <h2>Projects</h2>
           <div className="project-grid">
             <div className="project-item">
-              <h3>Couch Potato</h3>
+            <h3>
+                Couch Potato
+                <a href="https://github.com/seanh101/couch-potato" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="https://couchpotato.app" target="_blank" rel="noopener noreferrer" className="arrow-icon-link">
+                  <i className="fas fa-arrow-right"></i>
+                </a>
+              </h3>
               <p>
                 Built using the MERN stack, Couch Potato is an application that allows users to search for movies and shows and find out where they are streaming. It features efficient data storage using MongoDB and a seamless user experience.
               </p>
@@ -41,7 +47,15 @@ function About() {
               </div>
             </div>
             <div className="project-item">
-              <h3>Soundify</h3>
+            <h3>
+                Soundify
+                <a href="https://github.com/seanh101/Soundify" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="https://soundify-ahje.onrender.com/" target="_blank" rel="noopener noreferrer" className="arrow-icon-link">
+                  <i className="fas fa-arrow-right"></i>
+                </a>
+              </h3>
               <p>
                 Soundify is a playlist and song management web app developed with Django and Python. It offers full CRUD functionality for playlists and songs, authentication and authorization using Django's built-in system, and integration with the Spotify API for song information.
               </p>
@@ -59,7 +73,15 @@ function About() {
               </div>
             </div>
             <div className="project-item">
-              <h3>NBA Lineup Creator</h3>
+            <h3>
+                NBA Lineup Creator
+                <a href="https://github.com/seanh101/NBA-Lineups" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                  <i className="fab fa-github"></i>
+                </a>
+                <a href="PUT_DEPLOYED_LINK_HERE" target="_blank" rel="noopener noreferrer" className="arrow-icon-link">
+                  <i className="fas fa-arrow-right"></i>
+                </a>
+              </h3>
               <p>
                 The NBA Lineup Creator is a web app built with Node.js, Express, and MongoDB. It allows users to create and manage their own NBA lineups using real player data from the balldontlie API.
               </p>
@@ -93,6 +115,8 @@ function About() {
 }
 
 export default About;
+
+
 
 
 
