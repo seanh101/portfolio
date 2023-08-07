@@ -105,9 +105,17 @@ function About() {
       <div className="row mt-5">
         <div className="col-lg-8 offset-lg-2">
           <h2>Contact Me</h2>
-          <p>
-            Thank you for visiting my portfolio website. Feel free to reach out via email (<a href="mailto:seanharrington4189@gmail.com">seanharrington4189@gmail.com</a>) or phone (<a href="tel:+16178428804">(617) 842.8804</a>) to discuss potential collaborations or job opportunities.
-          </p>
+          <form action="mailto:seanharrington4189@gmail.com" method="post" encType="text/plain">
+            <div className="form-group">
+              <label htmlFor="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" className="form-control" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="body">Body:</label>
+              <textarea id="body" name="body" rows="5" className="form-control"></textarea>
+            </div>
+            <button type="submit" className="btn btn-primary">Send Email</button>
+          </form>
         </div>
       </div>
     </div>
