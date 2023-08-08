@@ -115,7 +115,7 @@ function About() {
                 <div className="skill-item">JavaScript</div>
                 <div className="skill-item">HTML</div>
                 <div className="skill-item">CSS</div>
-                <div className="skill-item">CardStarter Library</div>
+                <div className="skill-item">Card Library</div>
               </div>
             </div>
           </div>
