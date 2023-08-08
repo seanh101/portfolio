@@ -10,9 +10,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* Apply the lavalamp background to the body element */
-  background: linear-gradient(-45deg, #ff4e50, #fc913a, #f9d423, #17b978, #00a1ff, #7328a6, #e24383);
+  background: linear-gradient(-45deg,  #f9d423, #17b978, #00a1ff, #7328a6);
   background-size: 300% 300%; /* Adjust the size for a more visible lavalamp effect */
-  animation: gradientAnimation 15s linear infinite; /* Adjust the animation duration for smoother movement */
+  animation: gradientAnimation 5s linear infinite; /* Adjust the animation duration for smoother movement */
 }
 
 /* CSS animation to create the lavalamp movement */
