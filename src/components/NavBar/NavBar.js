@@ -20,18 +20,19 @@ function CustomNavbar() {
 
   return (
     <Navbar bg="custom" expand="lg" fixed="top" className="navbar-custom">
-      <div className="container">
-        <Navbar.Brand onClick={() => scrollToSection('about')}>Sean Harrington</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarNav" />
-        <Navbar.Collapse id="navbarNav">
-          <Nav className="ml-auto">
-            <Nav.Link onClick={() => scrollToSection('about')}>About</Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('contact')}>Contact Me</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </div>
-    </Navbar>
+    <div className="container">
+      <Navbar.Brand onClick={() => scrollToSection('about')}>Sean Harrington</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbarNav" />
+      <Navbar.Collapse id="navbarNav">
+        <Nav className="ml-auto">
+          <Nav.Link onClick={() => scrollToSection('about')}>About</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection('contact')}>Contact Me</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </div>
+  </Navbar>
+  
   );
 }
 

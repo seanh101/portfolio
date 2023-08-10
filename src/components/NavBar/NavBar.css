@@ -18,6 +18,19 @@
     position: sticky;
     z-index: 100;
   }
+
+/* Style for the title */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover { /* Change color on hover */
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
   
   
 
