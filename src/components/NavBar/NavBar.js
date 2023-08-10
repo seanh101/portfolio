@@ -1,11 +1,13 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import './NavBar.css';
 
-function Navbar() {
+function CustomNavbar() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const headerOffset = 100; // Adjust this value based on your layout and header height
+      const headerOffset = 100;
       const elementPosition = section.getBoundingClientRect().top;
       const offsetPosition = elementPosition - headerOffset;
 
@@ -17,60 +19,24 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light navbar-custom fixed-top navbar-sticky">
-      <div className="navbar-overlay"></div> {/* Add overlay div */}
+    <Navbar bg="custom" expand="lg" fixed="top" className="navbar-custom">
       <div className="container">
-        <button
-          className="navbar-brand btn btn-link"
-          onClick={() => scrollToSection('about')}
-        >
-          Sean Harrington
-        </button>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <button
-                className="nav-link btn btn-link"
-                onClick={() => scrollToSection('about')}
-              >
-                About
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className="nav-link btn btn-link"
-                onClick={() => scrollToSection('projects')}
-              >
-                Projects
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className="nav-link btn btn-link"
-                onClick={() => scrollToSection('contact')}
-              >
-                Contact Me
-              </button>
-            </li>
-          </ul>
-        </div>
+        <Navbar.Brand onClick={() => scrollToSection('about')}>Sean Harrington</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="ml-auto">
+            <Nav.Link onClick={() => scrollToSection('about')}>About</Nav.Link>
+            <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
+            <Nav.Link onClick={() => scrollToSection('contact')}>Contact Me</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </div>
-    </nav>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;
+
 
 
 
