@@ -174,5 +174,13 @@ h2 {
     font-size: 0.75rem;
   }
 
+  .about-me {
+    min-width: 100%;
+  }
+
+  .professional-projects .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 100%)); /* Full width for each project item on mobile */
+  }
+
   
 }
