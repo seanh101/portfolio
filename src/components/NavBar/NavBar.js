@@ -26,7 +26,7 @@ function CustomNavbar() {
       <Navbar.Collapse id="navbarNav">
         <Nav className="ml-auto">
           <Nav.Link onClick={() => scrollToSection('about')}>About</Nav.Link>
-          <Nav.Link onClick={() => scrollToSection('projects')}>Projects</Nav.Link>
+          <Nav.Link onClick={() => scrollToSection('professional-projects')}>Projects</Nav.Link>
           <Nav.Link onClick={() => scrollToSection('contact')}>Contact Me</Nav.Link>
         </Nav>
       </Navbar.Collapse>

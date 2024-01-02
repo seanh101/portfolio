@@ -1,7 +1,20 @@
 import React from 'react';
 import './About.css';
+import { useState } from 'react';
 
 function About() {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState('');
+
+  const openPopup = (imagePath) => {
+    setCurrentImage(imagePath);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
   return (
     <div className="about-container">
       
@@ -22,12 +35,49 @@ function About() {
         </p>
       </section>
 
+      <section className="professional-projects">
+        <h2 id="professional-projects">Professional Projects</h2>
+        <div className="project-grid">
+     
+          <div className="project-item">
+            <h3 className="project-title">
+              The Gridiron
+              <a href="https://game.playcryptosports.com/gridiron" target="_blank" rel="noopener noreferrer" className="arrow-icon-link">
+                <i className="fas fa-arrow-right"></i>
+              </a>
+            </h3>
+            <div
+            className="project-image"
+            style={{ backgroundImage: 'url(/gridiron.png)' }}
+            onClick={() => openPopup('/gridiron.png')}
+          ></div>
+            <p>
+              A full-stack trivia/puzzle mini-game for fans of NFL and fantasy football. Test your player knowledge against different teams and player knowledge. Keep track of your stats and share results with friends.
+            </p>
+            <div className="skills-grid">
+              <div className="skill-item">JavaScript</div>
+              <div className="skill-item">HTML</div>
+              <div className="skill-item">TypeScript</div>
+              <div className="skill-item">React</div>
+              <div className="skill-item">Next.js</div>
+              <div className="skill-item">Node.js</div>
+              <div className="skill-item">PostgreSQL</div>
+              <div className="skill-item">SportsData API</div>
+            </div>
+          </div>
+
+         
+          
+        </div>
+      </section>
+
       {/* Personal Projects Section */}
       <section className="projects">
         <h2 id="projects">Personal Projects</h2>
         <div className="project-grid">
           {/* Couch Potato */}
           <div className="project-item">
+
             <h3 className="project-title">
               Couch Potato
               <a href="https://github.com/seanh101/couch-potato" target="_blank" rel="noopener noreferrer" className="github-icon-link">
@@ -37,6 +87,11 @@ function About() {
                 <i className="fas fa-arrow-right"></i>
               </a>
             </h3>
+            <div
+            className="project-image"
+            style={{ backgroundImage: 'url(/couchpotato.png)' }}
+            onClick={() => openPopup('/couchpotato.png')}
+          ></div>
             <p>
               Built using the MERN stack, Couch Potato is an application that allows users to search for movies and shows and find out where they are streaming. It features efficient data storage using MongoDB and a seamless user experience.
             </p>
@@ -61,6 +116,11 @@ function About() {
                 <i className="fas fa-arrow-right"></i>
               </a>
             </h3>
+            <div
+            className="project-image"
+            style={{ backgroundImage: 'url(/soundify.jpeg)' }}
+            onClick={() => openPopup('/soundify.jpeg')}
+          ></div>
             <p>
               Soundify is a playlist and song management web app developed with Django and Python. It offers full CRUD functionality for playlists and songs, authentication and authorization using Django's built-in system, and integration with the Spotify API for song information.
             </p>
@@ -89,6 +149,11 @@ function About() {
                 <i className="fas fa-arrow-right"></i>
               </a>
             </h3>
+            <div
+            className="project-image"
+            style={{ backgroundImage: 'url(/nbatracker.jpeg)' }}
+            onClick={() => openPopup('/nbatracker.jpeg')}
+          ></div>
             <p>
               The NBA Lineup Creator is a web app built with Node.js, Express, and MongoDB. It allows users to create and manage their own NBA lineups using real player data from the balldontlie API.
             </p>
@@ -117,6 +182,11 @@ function About() {
                 <i className="fas fa-arrow-right"></i>
               </a>
             </h3>
+            <div
+            className="project-image"
+            style={{ backgroundImage: 'url(/blackjack.png)' }}
+            onClick={() => openPopup('/blackjack.png')}
+          ></div>
             <p>
               A fun Blackjack game built with JavaScript, HTML, and CSS, where you can test your luck and try to beat the dealer in this classic casino game!
             </p>
@@ -190,7 +260,13 @@ function About() {
           </a>
         </div>
       </section>
-      
+      {isPopupOpen && (
+        <div className="popup-overlay" onClick={closePopup}>
+          <div className="popup-content" onClick={e => e.stopPropagation()}>
+            <img src={currentImage} alt="Expanded" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
