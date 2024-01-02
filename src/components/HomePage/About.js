@@ -6,6 +6,7 @@ function About() {
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
+  const [showFullAbout, setShowFullAbout] = useState(false);
 
   const openPopup = (imagePath) => {
     setCurrentImage(imagePath);
@@ -15,12 +16,18 @@ function About() {
   const closePopup = () => {
     setIsPopupOpen(false);
   };
+
+  const toggleFullAbout = () => {
+    setShowFullAbout(!showFullAbout);
+  };
+
   return (
     <div className="about-container">
       
       <h2 id="about">About Me</h2>
       <section className="about-me">
-        
+         {showFullAbout ? (
+          <p>
         <p>
           Hi there! I'm Sean Harrington, a software engineer with a background in tech sales and a passion for building innovative solutions. I bring a unique blend of sales expertise and technical acumen, allowing me to bridge the gap between business objectives and cutting-edge technology.
         </p>
@@ -33,6 +40,23 @@ function About() {
         <p>
           During my journey as a software engineer, I've worked on several other exciting projects. Let me highlight a few of them:
         </p>
+        <div className="toggle-button" onClick={toggleFullAbout}>
+              <i className="fas fa-chevron-up"></i> {/* Upward arrow for 'Show Less' */}
+            </div>
+        </p>
+        ) : (
+          <p>
+              <p>
+          Hi there! I'm Sean Harrington, a software engineer with a background in tech sales and a passion for building innovative solutions. I bring a unique blend of sales expertise and technical acumen, allowing me to bridge the gap between business objectives and cutting-edge technology.
+        </p>
+        <p>
+          With experience in JavaScript, React.js, Python, Django, and more, I have the skills to tackle challenging problems and deliver high-quality code. I thrive on attention to detail, effective communication, and a user-centric mindset to create solutions that meet both technical requirements and user needs.
+        </p>
+        <div className="toggle-button" onClick={toggleFullAbout}>
+              <i className="fas fa-chevron-down"></i> {/* Downward arrow for 'Show More' */}
+            </div>
+          </p>
+        )}
       </section>
 
       <section className="professional-projects">
