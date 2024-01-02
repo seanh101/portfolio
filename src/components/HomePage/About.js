@@ -49,9 +49,6 @@ function About() {
               <p>
           Hi there! I'm Sean Harrington, a software engineer with a background in tech sales and a passion for building innovative solutions. I bring a unique blend of sales expertise and technical acumen, allowing me to bridge the gap between business objectives and cutting-edge technology.
         </p>
-        <p>
-          With experience in JavaScript, React.js, Python, Django, and more, I have the skills to tackle challenging problems and deliver high-quality code. I thrive on attention to detail, effective communication, and a user-centric mindset to create solutions that meet both technical requirements and user needs.
-        </p>
         <div className="toggle-button" onClick={toggleFullAbout}>
               <i className="fas fa-chevron-down"></i> {/* Downward arrow for 'Show More' */}
             </div>
